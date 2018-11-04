@@ -1,0 +1,73 @@
+<!doctype html>
+  <head>
+    <title>Example live stream!</title>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap v4.0.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- VideoJS v7.3.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/alt/video-js-cdn.min.css" integrity="sha256-mujqz1jG8djcBxoJnvfvTIjRxz7y5xNpzY18x8au5ck=" crossorigin="anonymous" />
+    
+    <!-- Font-Awesome v5.5.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="cover.css">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <style>
+      body {
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+    </style>
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">My Stream</h3>
+            <nav class="nav nav-masthead justify-content-center">
+              <a class="nav-link btn align-items-center" href="https://github.com">
+                <i class="fab fa-github"></i> Repository
+              </a>
+            </nav>
+        </div>
+      </header>
+      <main role="main" class="inner cover">
+        <div class="p-3 mb-5 bg-white rounded embed-responsive my-card" style="border-radius: 2px; border-color: black; box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);">
+          <video id="example-video" width=540 height=267 class="video-js vjs-default-skin vjs-big-play-centered" controls>
+            <source
+              src=""
+              type="application/x-mpegURL">
+          </video>
+        </div>
+      </main>
+      
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <h5>made with <i id="h-icon" class="fas fa-heart"></i></h5>
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap 4.0.0 -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- VideoJS 7.3.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js" integrity="sha256-FtN3AlYCFtRDFdQIG+XM7JgkF3CYyzDkysTR34GUII4=" crossorigin="anonymous"></script>
+    <script>
+      var player = videojs('example-video');
+      player.src({
+        src: 'http://localhost:80/hls/test.m3u8',
+        type: 'application/x-mpegURL'});
+    </script>
+  </body>
+</html>

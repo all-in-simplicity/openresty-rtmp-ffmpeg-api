@@ -1,0 +1,1 @@
+*/10 * * * * /clean-hls-dir.sh  > /dev/stdout

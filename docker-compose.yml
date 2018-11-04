@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx:
+    image: thiagodev/openresty-rtmp-ffmpeg-api:latest
+    environment:
+      - STREAM_KEY=bla
+    ports:
+      - "80:80"
+      - "1935:1935"
+    volumes:
+      - ./etc/nginx/nginx.conf:/usr/local/openresty/nginx/conf/nginx.conf:ro
