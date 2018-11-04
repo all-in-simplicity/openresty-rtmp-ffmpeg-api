@@ -1,3 +1,4 @@
+![GitHub](https://img.shields.io/github/license/thiago-dev/openresty-rtmp-ffmpeg-api.svg?style=popout-square) [![Docker Build Status](https://img.shields.io/docker/build/thiagodev/openresty-rtmp-ffmpeg-api.svg?style=popout-square)](https://hub.docker.com/r/thiagodev/openresty-rtmp-ffmpeg-api) [![MicroBadger Size](https://img.shields.io/microbadger/image-size/thiagodev/openresty-rtmp-ffmpeg-api.svg?style=popout-square)](https://hub.docker.com/r/thiagodev/openresty-rtmp-ffmpeg-api) [![HitCount](http://hits.dwyl.io/thiago-dev/openresty-rtmp-ffmpeg-api.svg)](http://hits.dwyl.io/thiago-dev/openresty-rtmp-ffmpeg-api) 
 # Example of a Docker based Media Streaming Server powered by nginx-rtmp and a Go API
 
 <img src="https://thiago-dev.github.io/nginx-streaming-example.gif"></img>
